@@ -12,7 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        self.view.backgroundColor = UIColor.lightGray
+
+        let label = UILabel()
+        label.text = "Hello World!"
+        label.sizeToFit()
+        label.frame = CGRect(origin: CGPoint(x: 16, y: 40), size: label.bounds.size)
+        self.view.addSubview(label)
     }
 
     override func didReceiveMemoryWarning() {
